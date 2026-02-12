@@ -9,4 +9,5 @@ jobs:
     with:
       repo_name: ui-ecom-app
       infra_repo: Infrastructure
+      backend_urls: https://be-ecom-products-webapp.azurewebsites.net,https://be-ecom-orders-webapp.azurewebsites.net,https://be-ecom-users-webapp.azurewebsites.net
     secrets: inherit
