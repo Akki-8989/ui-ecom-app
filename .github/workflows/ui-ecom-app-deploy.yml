@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: Akki-8989/Infrastructure/.github/workflows/deploy-ui-ecom-app.yml@main
+    with:
+      repo_name: ui-ecom-app
+      infra_repo: Infrastructure
+      backend_urls: https://be-ecom-products-webapp.azurewebsites.net,https://be-ecom-orders-webapp.azurewebsites.net,https://be-ecom-users-webapp.azurewebsites.net
+    secrets: inherit
